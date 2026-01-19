@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kripik Nagih - Kriuknya Juara!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
+        .gradient-yellow { background: linear-gradient(135deg, #f6d365 0%, #fda085 100%); }
+        .product-card:hover { transform: translateY(-10px); transition: all 0.3s ease; }
+    </style>
+</head>
+<body class="bg-orange-50 text-gray-800">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-orange-600 tracking-tight">KERIPK NAGIH513</h1>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#home" class="hover:text-orange-500">Beranda</a>
+                <a href="#rasa" class="hover:text-orange-500">Varian Rasa</a>
+                <a href="#tentang" class="hover:text-orange-500">Keunggulan</a>
+            </div>
+            <a href="//wa.me/6282124360741?text=Halo%20saya%20mau%20pesan">Pesan Sekarang</a>" class="bg-orange-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-orange-600 transition">Pesan Sekarang</a>
+        </div>
+    </nav>
+
+    <section id="home" class="pt-32 pb-20 px-6 gradient-yellow text-white">
+        <div class="container mx-auto flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h2 class="text-5xl md:text-6xl font-bold leading-tight mb-6">Nikmati Kripik Pisang <br><span class="text-orange-900">Premium & Renyah!</span></h2>
+                <p class="text-lg mb-8 opacity-90">Camilan sehat dari pisang pilihan dengan bumbu yang melimpah. Sekali coba, dijamin bakal nagih terus!</p>
+                <a href="#rasa" class="bg-white text-orange-600 px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:bg-orange-100 transition">Lihat 3 Varian Rasa</a>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-orange-200/50 rounded-full blur-3xl"></div>
+                    <img src="https://i.postimg.cc/bvSwn2xV/Gemini-Generated-Image-wbjdpmwbjdpmwbjd.png" alt="Kripik Pisang" class="relative rounded-3xl shadow-2xl w-80 md:w-96 border-8 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rasa" class="py-24 px-6">
+        <div class="container mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-4">Pilih <span class="text-orange-500">Favoritmu!</span></h3>
+            <p class="text-gray-500 mb-16">Tersedia dalam 3 varian rasa yang menggoyang lidah</p>
+            
+            <div class="grid md:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center">
+                    <img src="https://i.postimg.cc/T1DPVvq6/Whats-App-Image-2026-01-18-at-20-25-41.jpg">
+                    <h4 class="text-2xl font-bold mb-3">Original</h4>
+                    <p class="text-gray-500 mb-6 text-sm">Rasa klasik pisang pilihan yang pas dan renyah.</p>
+                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 5.000</p>
+                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20Original" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center relative">
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-500 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest">Paling Laris</div>
+                    <img src="https://i.postimg.cc/28ndQVw3/Whats-App-Image-2026-01-18-at-20-25-37.jpg">
+                    <h4 class="text-2xl font-bold mb-3">Cokelat Lumer</h4>
+                    <p class="text-gray-500 mb-6 text-sm">Balutan bubuk cokelat premium yang tebal dan melimpah di setiap gigitan.</p>
+                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 8.000</p>
+                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20Cokelat" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
+                </div>
+
+                <div class="bg-white p-8 rounded-3xl shadow-xl product-card border border-orange-100 text-center">
+                    <img src="https://i.postimg.cc/NFyJsp8H/Whats-App-Image-2026-01-18-at-20-25-49.jpg">
+                    <h4 class="text-2xl font-bold mb-3">manis</h4>
+                    <p class="text-gray-500 mb-6 text-sm">Paduan rasa manis nagih dan gurih yang bikin susah berhenti makan.</p>
+                    <p class="text-2xl font-bold text-orange-600 mb-6">Rp 6.000</p>
+                    <a href="https://wa.me/6282124360741?text=Halo,%20saya%20pesan%20Rasa%20manis" class="block w-full py-3 bg-orange-500 text-white rounded-xl font-bold hover:bg-orange-600 shadow-md">Pilih Rasa Ini</a>
+                </div>
+            </div>
+        </div>
+    
+    <section id="pesan-kustom" class="py-20 bg-white">
+    <div class="container mx-auto px-6 max-w-4xl">
+        <div class="bg-orange-50 rounded-3xl p-8 md:p-12 shadow-2xl border border-orange-200">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-orange-800 mb-4">Form Pemesanan Kustom</h2>
+                <p class="text-gray-600">Isi detail di bawah untuk pesanan yang lebih akurat</p>
+            </div>
+
+            <form id="waForm" class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Pilih Varian Rasa</label>
+                        <select id="rasa" class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                            <option value="Original Manis">Original Manis (Rp 5.000)</option>
+                            <option value="Cokelat Lumer">Cokelat Lumer (Rp 7.000)</option>
+                            <option value="Pedas Gurih">Pedas Gurih (Rp 6.000)</option>
+                            <option value="Campur/Mix">Campur / Mix Rasa</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2 text-gray-700">Jumlah Bungkus</label>
+                        <input type="number" id="jumlah" min="1" value="1" class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500">
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-semibold mb-2 text-gray-700">Alamat Lengkap Pengiriman</label>
+                    <textarea id="alamat" rows="3" placeholder="Masukkan alamat lengkap Anda..." class="w-full p-3 rounded-xl border-gray-300 shadow-sm focus:border-orange-500 focus:ring-orange-500"></textarea>
+                </div>
+
+                <button type="button" onclick="kirimWA()" class="w-full bg-green-500 text-white font-bold py-4 rounded-xl hover:bg-green-600 transition flex items-center justify-center space-x-3 shadow-lg">
+                    <i class="fab fa-whatsapp text-2xl"></i>
+                    <span>Kirim Pesanan ke WhatsApp</span>
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<script>
+    function kirimWA() {
+        const nomorWA = "6282124360741741";
+        const rasa = document.getElementById('rasa').value;
+        const jumlah = document.getElementById('jumlah').value;
+        const alamat = document.getElementById('alamat').value;
+
+        if (alamat === "") {
+            alert("Mohon isi alamat pengiriman terlebih dahulu!");
+            return;
+        }
+
+        const pesan = "Halo Kripik Nagih, saya ingin pesan kustom:%0A%0A" +
+                      "*Varian:* " + rasa + "%0A" +
+                      "*Jumlah:* " + jumlah + " bungkus%0A" +
+                      "*Alamat:* " + alamat + "%0A%0A" +
+                      "Mohon segera diproses ya!";
+
+        const linkWA = "https://wa.me/" + nomorWA + "?text=" + pesan;
+        window.open(linkWA, '_blank');
+    }
+</script>
+
+</body>
+</html>
+</section>
+
+    <footer class="py-20 px-6 bg-orange-600 text-white text-center">
+        <div class="container mx-auto max-w-2xl">
+            <h3 class="text-3xl font-bold mb-6">Lagi di Rumah Aja? Temani Waktumu dengan Kripik Nagih!</h3>
+            <p class="mb-10 opacity-80">Siap kirim ke seluruh wilayah. Pesan sekarang melalui WhatsApp untuk respon cepat.</p>
+            <a href="https://wa.me/6282124360741" class="inline-flex items-center space-x-3 bg-white text-orange-600 px-10 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-2xl">
+                <i class="fab fa-whatsapp text-2xl"></i>
+                <span>Order via WhatsApp</span>
+            </a>
+        </div>
+    </section>
+
+    <footer class="py-10 text-center border-t border-orange-100 text-gray-400 text-sm">
+        <p>&copy; 2026 KRIPK NAGIH. Semua Hak Dilindungi.</p>
+    </footer>
