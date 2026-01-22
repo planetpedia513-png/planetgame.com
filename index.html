@@ -450,46 +450,6 @@
             background-color: #f5f3ff;
         }
 
-        
-        /* Kontainer utama menggunakan Grid */
-.game-container {
-  display: grid;
-  /* Membuat 3 kolom yang sama rata di HP */
-  grid-template-columns: repeat(3, 1fr); 
-  gap: 10px; /* Jarak antar kotak game */
-  padding: 15px;
-  background-color: #1a0b2e; /* Warna gelap sesuai gambar */
-}
-
-/* Kotak untuk setiap game */
-.game-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-/* Mengatur gambar agar bulat di sudut dan responsif */
-.game-card img {
-  width: 100%;
-  max-width: 80px; /* Ukuran maksimal ikon */
-  border-radius: 15px; /* Membuat sudut tumpul */
-  aspect-ratio: 1 / 1; /* Memastikan gambar tetap kotak/presisi */
-  object-fit: cover;
-  border: 1px solid #3d2a5a;
-}
-
-/* Mengatur teks judul game */
-.game-card p {
-  color: white;
-  font-size: 11px; /* Ukuran kecil agar tidak memenuhi layar HP */
-  margin-top: 8px;
-  font-family: sans-serif;
-  line-height: 1.2;
-  word-wrap: break-word; /* Agar teks panjang otomatis turun ke bawah */
-}
-
-
     </style>
 </head>
 <body class="bg-[#120024] p-4 md:p-10 text-white font-sans">
@@ -498,35 +458,43 @@
         <h2 class="text-xl font-bold mb-6 flex items-center gap-2">
             <span class="bg-purple-600 w-2 h-8 rounded-full"></span> PILIH GAME
         </h2>
-       
-       <div class="flex justify-start gap-4 p-5">
-            <div onclick="pilihGame('mlbb')">
+        
+       <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 p-5">
+            <div onclick="pilihGame('mlbb')"class="cursor-pointer">
                 <img src="https://i.postimg.cc/T1q1bp17/Whats-App-Image-2026-01-22-at-14-56-44.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="MLBB">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Mobile Legends: Bang Bang</p>
+                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
+      Mobile Legends: Bang Bang
+    </p>
             </div>
             
-            <div onclick="pilihGame('ffmax')">
+            <div onclick="pilihGame('ffmax')"class="cursor-pointer">
                 <img src="https://i.postimg.cc/wvnfKrTW/Whats-App-Image-2026-01-22-at-14-56-43-(1).jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FF MAX">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Free Fire MAX</p>
-            </div>
-            
-            <div onclick="pilihGame('ff')">
+            <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
+      Free Fire MAX
+    </p>
+     </div>
+            <div onclick="pilihGame('ff')"class="cursor-pointer">
                 <img src="https://i.postimg.cc/ht80yjmd/Whats-App-Image-2026-01-22-at-14-56-43-(2).jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FF">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Free Fire</p>
+                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
+      Free Fire
+    </p>
             </div>
             
-            <div onclick="pilihGame('magic')" >
+            <div onclick="pilihGame('magic')"class="cursor-pointer" >
                 <img src="https://i.postimg.cc/g0nHYK5d/Whats-App-Image-2026-01-22-at-14-56-43.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="Magic Chess">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">Magic Chess: Go Go</p>
+                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
+      Free Fire
+    </p>
             </div>
             
-            <div onclick="pilihGame('fc')">
+            <div onclick="pilihGame('fc')"class="cursor-pointer">
                 <img src="https://i.postimg.cc/7hBFT9Hq/Whats-App-Image-2026-01-22-at-14-56-42.jpg" class="w-full aspect-square object-cover rounded-xl mb-2" alt="FC Mobile">
-                <p class="text-center font-bold glass p-2 mt-2 rounded-3xl text-sm">EA SPORTS FC™ Mobile</p>
+                <p class="text-center font-bold glass p-2 mt-2 rounded-xl text-[10px] leading-tight h-10 flex items-center justify-center">
+      Free Fire
+    </p>
             </div>
         </div>
     </div>
-
     <div id="main-content" class="hidden space-y-6 max-w-4xl mx-auto">
         
         <button onclick="tombolKembali()" class="flex items-center gap-2 text-purple-400 hover:text-white transition font-semibold mb-4">
